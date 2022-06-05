@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='voiceAssistant.css') }}">
+    <title>Speech Recognition</title>
+  
+  </head>
+  <body>
+    <button id="button">Press to Start</button>
+    <div id="content"></div>
+    <script>
+      $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='voiceAssistant.js') }}"></script>
+  </body>
+  
+</html>

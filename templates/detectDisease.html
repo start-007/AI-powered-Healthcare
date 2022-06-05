@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='detectDisease.css') }}">
+  <title>Detect Disease</title>
+</head>
+<body>
+  <h1>Select the following symptoms to know your disease</h1>
+  
+  <div id="symptomList">
+
+  </div>
+  <button>Submit</button>
+  <h2>Your are suffering from:</h2>
+  <script>
+    $SCRIPT_ROOT = {{ request.script_root|tojson }};
+  </script>
+  <script type="text/javascript" src="{{ url_for('static', filename='detectDisease.js') }}"></script>
+</body>
+<script type='text/javascript' src='//code.jquery.com/jquery-1.10.1.js'></script>
+
+</html>
