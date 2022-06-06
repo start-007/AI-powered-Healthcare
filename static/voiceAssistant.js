@@ -4,7 +4,7 @@ window.onload = () => {
   var value="";
   var flag=0;
   
- 
+  button.style['animation-name'] = 'none';
   button.addEventListener('click', () => {
     if (button.style['animation-name'] === 'flash') {
       recognition.stop();
@@ -57,7 +57,7 @@ function onStopButton(text1) {
     })
     .then(r => r.json())
     .then(r => {
-      
+      console.log("worked");
       window.speechSynthesis.speak(new SpeechSynthesisUtterance(r.answer));
 
     })
