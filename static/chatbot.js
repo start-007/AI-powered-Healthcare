@@ -11,6 +11,7 @@ class Chatbox {
     this.state = false;
     this.messages = [];
     this.flag=0;
+    this.flag1=0;
     
   }
 
@@ -39,7 +40,7 @@ class Chatbox {
         chatbox.classList.add('chatbox--active');
           if(this.flag==0){
             
-            const msg={ name: "ME", message: "Hey there who please fill the below form before we even start our conversation." }
+            const msg={ name: "ME", message: "Hi.May i know your name and age" }
             this.messages.push(msg);
             this.updateChatText(chatbox);
             this.flag=1;
@@ -57,6 +58,33 @@ class Chatbox {
   onSendButton(chatbox) {
       var textField = chatbox.querySelector('input');
       let text1 = textField.value
+      var name='';
+      if(this.flag1==0){
+          console.log("yes");
+        for(let i=0;i<text1.length;++i){
+            if(text1[i]=='a' && text1[i+1]=='m'){
+
+                for(let j=i+3;j<text1.length;j++){
+                    if(text1[j]==" "){
+                        break;
+                    }
+                    name+=text1[j];
+                }
+                break;
+               
+            }   
+        }
+        
+        const msg={ name: "USER", message:text1 }
+        this.messages.push(msg);
+        this.updateChatText(chatbox)
+        const msg1={ name: "ME", message:"HI "+name }
+        this.messages.push(msg1);
+        this.updateChatText(chatbox);
+        this.flag1=1;
+        textField.value = ''
+        return;
+      }
       if (text1 === "") {
           return;
       }
