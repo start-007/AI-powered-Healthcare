@@ -1,17 +1,159 @@
+body{
+  background-color: #F1F1F1;
+}
+
 .header{
+  
   background-image: url('images/connectAi.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.491);
-  height: 600px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.329);
+  height: 700px;
   width:100%;
   
 }
-h1{
-  color: white;
+#section1{
+  position: relative;
+  top:700px;
+  background-color: black;
 }
-#navbarNav{
-  position: absolute;
-  right:100px;
+
+h1{
+  font-weight: bolder;
+  font-size: 4.5rem;
+}
+h3{
+  margin: 15px;
+}
+
+.header-child{
+  position: relative;
+  top:90px;
+  text-align: center;
+  color: white;
+  
+}
+.header-child1{
+  position: relative;
+  top:170px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.511);
+  margin-right: 520px;
+  margin-left: 520px;
+  border-radius: 10%;
+  
+}
+.header-child2{
+  border-radius: 30%;
+  height: 60px;
+  margin-bottom: 10px;
+  padding:10px ;
+}
+
+.header-child3{
+  
+  height: 300px;
+  padding: 50px;
+ 
+}
+a{
+  color: white;
+  
+}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+
+a:hover {
+  
+  background-color: transparent;
+
+}
+
+
+/*Cards*/
+.card{
+  border-radius: 10%;
+  background:rgb(146, 150, 150);
+  width:30%;
+  height:350px;
+  padding: 50px;
+}
+#leftbox {
+  float:left; 
+  margin-right: 25px;
+  margin-left: 25px;
+ 
+
+}
+#middlebox{
+  float:left;
+  
+  margin-right: 25px;
+  margin-left: 30px;
+}
+#rightbox{
+  float:right;
+  margin-right: 25px;
+ 
+}
+#section{
+  position: relative;
+  top:50px;
+}
+
+footer{
+  position: relative;
+  top:500px;
+  text-align: center;
+  height: 100px;
+}
+
+ul{
+  list-style: square;
+  font-size: larger;
+  color: white;
+  
+  
+}
+
+h2{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.sectionh2{
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+#section1{
+  position:relative;
+  top: 500px;
+  background-image: url('images/doc.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(168, 167, 167, 0.139);
+  height: 400px;
+  width:100%;
+
+
+}
+
+.quote{
+ 
+  font-weight: bold;
+  color: white;
+  margin:30px;
+}
+
+.content{
+  padding: 30px;
+  position: relative;
+  bottom:250px;
 }

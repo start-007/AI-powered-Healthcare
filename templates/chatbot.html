@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="{{ url_for('static', filename='chatbotStyles.css') }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 
 <head>
     <meta charset="UTF-8">
     <title>Chatbot</title>
 </head>
 <body>
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#"><img class="icon1"src="{{ url_for('static', filename='images/favicon.ico') }}" alt="">
+                Connect-AI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/chatbot">Chatbot</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/voice-assistant">Voice Assistant</a>
+                  </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link " href="/detect-disease">Detect Disease</a>
+                </li>
+              </ul>
+              
+            </div>
+          </nav>
+      </div>
+    
+   
 
 <div class="header">
     <h1>Welcome</h1>
     <h1>I am the AI chatbot</h1>
 </div>
-
+<div class="content">
+    <div class="description">
+        A chatbot is an AI feature that allows you to communicate via automated messages to solve a problem or answer a question about health consultation.Natural language processing and machine learning work to process data to accurately communicate via the chatbot. Chatbots are enhancing some of the traditional customer services to serve as 24/7 communication with potential patients.
+    </div>
+    <div class="description">you may ask questions like 'who are you?','what is your age?' and also about the diseases your are suffering, consultation, primary care.
+        <h3>CLICK THE BUTTON</h3>
+    </div>
+    
+</div>
 <div class="container">
 
     <div class="chatbox">
@@ -44,6 +84,9 @@
     </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
         $SCRIPT_ROOT = {{ request.script_root|tojson }};
     </script>

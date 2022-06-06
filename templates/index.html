@@ -4,21 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='navbarStyles.css') }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
   <title>Health Care</title>
 </head>
 <body>
   <div class="fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
-      <a class="navbar-brand" href="/"><link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">Connect-AI</a>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="/">
+        <img class="icon"src="{{ url_for('static', filename='images/favicon.ico') }}" alt="">Connect-AI</a>
+      
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="/chatbot">Chatbot <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/chatbot">Chatbot</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/voice-assistant">Voice Assistant</a>
@@ -32,12 +39,74 @@
     </nav>
   </div>
   <div class="header">
-    <h1>Home Page</h1>
+    <div class="header-child"><h1>Connecting AI to Healthcare</h1></div>
+    <div class="header-child header-child1 header-child2">
+        <h2>Features of this Website:</h2>
+    </div>
+    <div class="header-child header-child1 header-child3">
+      <a href="/chatbot"><h3>AI Chatbot</h3></a>
+      <a href="/voice-assistant"><h3>Virtual Assistant</h3></a>
+      <a href="/detect-disease"><h3>Early detection of Disease</h3></a>
+      
+    </div>
+    
+    
    
   </div>
-  <div><h2>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-    "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-  </h2></div>
+
+
+  <div id="section">
+    <h2 class="sectionh2">Benefits Of AI in Healthcare</h2>
+    <div id="leftbox" class="card">
+      <h2>Chat Bot</h2>
+      <ul>
+        <li>Provide personalized, one-on-one care</li>
+        <li>Provide voice-activated instructions for First Aid.</li>
+        <li>Answer FAQ based on a knowledge database.</li>
+        <li>Share health tips for a better lifestyle.</li>
+      </ul>
+        
+    </div>
+    <div id="middlebox" class="card">
+
+      <h2>Voice Assistant</h2>
+      <ul>
+        <li>Provide medical information</li>
+        <li>Provide mental health assistance</li>
+        <li> Service available 24/7.</li>
+        <li>Reduces the investment in workers</li>
+     </ul>
+    </div>
+    <div id="rightbox" class="card">
+      <h2>Early detection of Disease</h2>
+      <ul>
+        <li>Save time and money</li>
+        <li>The earlier detection of disease may lead to more cures or longer survival</li>
+        <li>Less time spent commuting to the doctor's office</li>
+    </ul>
+    </div>
+
+  </div>
+  <div id="section1">
+
+    <div class="content">
+
+    
+      <div class="quote">“Compassionate AI drives the machines to cry for those who are in pain and suffering. It drives the machine to find the shortest path to minimize the pain and suffering of others.”
+        ― Amit Ray, Compassionate Artificial Intelligence</div>
+      <div class="quote">"Chatbots are enhancing some of the traditional customer services to serve as 24/7 communication with potential patients."</div>
+      <div class="quote">"voice assistant's ability to accurately recognize proper medication names can have life-altering consequences for patients who use technology to help manage their health,” stated Yan Fossat, vice president of applied sciences at Klick Labs, and the study's primary investigator."</div>
+      <div class="quote">
+        "Chatbots are an excellent way to be “available” at all times and continue to save 20-40% of the website viewers who would visit during non-business hours.
+        AVAILABLE 24/7"
+
+      </div>
+  </div>
+  </div>
+
+  <footer>
+    Ⓒ Copyright 2022
+  </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

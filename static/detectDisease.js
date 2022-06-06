@@ -48,7 +48,13 @@ addDivs=(symptomList)=>{
 }
 onClickButton=(arr)=> {
   
-  
+  if(arr.length==0){
+    var heading2=document.querySelector("h2");
+    heading2.innerHTML="PLEASE SELECT SYMPTOMS";
+    heading2.style.color = "red";
+    heading2.style.fontWeight = bold;
+    return;
+  }
 
   fetch($SCRIPT_ROOT+'/detect-disease', {
       method: 'POST',
@@ -62,6 +68,8 @@ onClickButton=(arr)=> {
     .then(r => {
       
       document.querySelector("h2").innerHTML="Your are suffering from: "+r.answer;
+      document.querySelector("h2").style.color = "#fafa0a";
+      document.querySelector("h2").style.fontWeight = bold;
 
   }).catch((error) => {
       console.error('Error:', error);
