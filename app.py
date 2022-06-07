@@ -37,5 +37,6 @@ def detectDisease():
   print(message)
   return jsonify(message)
 
-  
+if __name__ == '__main__':
+  app.run(debug=True)
 
