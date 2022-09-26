@@ -13,7 +13,16 @@ detection and management of diseases, whether physiological, genetic or mental. 
 4.	Getting access to right healthcare.
 5.	Emotional Support.
 
-# Main features of the website
+## Main features of the website
 1.AI chatbot
 2.AI Voice Assistant
 3.Detection of the disease based on syptoms.
+
+Tech stack used:
+
+### Frontend :
+HTML,CSS,BOOTSTRAP,JAVASCRIPT
+### Backend:
+Python[Flask]
+
+
