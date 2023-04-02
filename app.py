@@ -23,7 +23,6 @@ def loginpage():
 def loginpage():
   return render_template("signup.html")
 
-
 @app.get("/")
 def index_get():
   return render_template("index.html")
