@@ -1,4 +1,5 @@
-torch==1.11.0
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==1.8.1+cpu 
 Flask==2.1.2
 gunicorn==20.1.0
 nltk==3.7
@@ -6,5 +7,4 @@ numpy==1.19.1
 scikit-learn==1.0.2
 sklearn==0.0
 pandas==1.1.1
-torch==1.11.0
 joblib==1.0.1
